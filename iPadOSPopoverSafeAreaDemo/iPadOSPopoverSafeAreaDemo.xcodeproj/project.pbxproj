@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		648EEBBF239182FF00058F06 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 648EEBBE239182FF00058F06 /* AppDelegate.m */; };
+		648EEBCA2391830100058F06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 648EEBC92391830100058F06 /* Assets.xcassets */; };
+		648EEBCD2391830100058F06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648EEBCB2391830100058F06 /* LaunchScreen.storyboard */; };
+		648EEBD02391830100058F06 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 648EEBCF2391830100058F06 /* main.m */; };
+		648EEBDA2391830100058F06 /* iPadOSPopoverSafeAreaDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 648EEBD92391830100058F06 /* iPadOSPopoverSafeAreaDemoTests.m */; };
+		648EEBE82391855D00058F06 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 648EEBE72391855D00058F06 /* MainViewController.m */; };
+		648EEBEA2391856700058F06 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648EEBE92391856700058F06 /* MainViewController.storyboard */; };
+		648EEBEF2391871700058F06 /* UIViewController+StoryBoardInstantiatable.m in Sources */ = {isa = PBXBuildFile; fileRef = 648EEBEE2391871700058F06 /* UIViewController+StoryBoardInstantiatable.m */; };
+		648EEBF323918A4800058F06 /* PopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 648EEBF223918A4800058F06 /* PopoverViewController.m */; };
+		648EEBF523918C1700058F06 /* PopoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648EEBF423918C1700058F06 /* PopoverViewController.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		648EEBD62391830100058F06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 648EEBB2239182FF00058F06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 648EEBB9239182FF00058F06;
+			remoteInfo = iPadOSPopoverSafeAreaDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		648EEBBA239182FF00058F06 /* iPadOSPopoverSafeAreaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPadOSPopoverSafeAreaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		648EEBBD239182FF00058F06 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		648EEBBE239182FF00058F06 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		648EEBC92391830100058F06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		648EEBCC2391830100058F06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		648EEBCE2391830100058F06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		648EEBCF2391830100058F06 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		648EEBD52391830100058F06 /* iPadOSPopoverSafeAreaDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iPadOSPopoverSafeAreaDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		648EEBD92391830100058F06 /* iPadOSPopoverSafeAreaDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iPadOSPopoverSafeAreaDemoTests.m; sourceTree = "<group>"; };
+		648EEBDB2391830100058F06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		648EEBE62391855D00058F06 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		648EEBE72391855D00058F06 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		648EEBE92391856700058F06 /* MainViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainViewController.storyboard; sourceTree = "<group>"; };
+		648EEBED2391871700058F06 /* UIViewController+StoryBoardInstantiatable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+StoryBoardInstantiatable.h"; sourceTree = "<group>"; };
+		648EEBEE2391871700058F06 /* UIViewController+StoryBoardInstantiatable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+StoryBoardInstantiatable.m"; sourceTree = "<group>"; };
+		648EEBF123918A4800058F06 /* PopoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopoverViewController.h; sourceTree = "<group>"; };
+		648EEBF223918A4800058F06 /* PopoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopoverViewController.m; sourceTree = "<group>"; };
+		648EEBF423918C1700058F06 /* PopoverViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopoverViewController.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		648EEBB7239182FF00058F06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		648EEBD22391830100058F06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		648EEBB1239182FF00058F06 = {
+			isa = PBXGroup;
+			children = (
+				648EEBBC239182FF00058F06 /* iPadOSPopoverSafeAreaDemo */,
+				648EEBD82391830100058F06 /* iPadOSPopoverSafeAreaDemoTests */,
+				648EEBBB239182FF00058F06 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		648EEBBB239182FF00058F06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				648EEBBA239182FF00058F06 /* iPadOSPopoverSafeAreaDemo.app */,
+				648EEBD52391830100058F06 /* iPadOSPopoverSafeAreaDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		648EEBBC239182FF00058F06 /* iPadOSPopoverSafeAreaDemo */ = {
+			isa = PBXGroup;
+			children = (
+				648EEBF72392A30F00058F06 /* Resources */,
+				648EEBF62392A2A500058F06 /* Application */,
+				648EEBEB2391865300058F06 /* Categories */,
+				648EEBE42391853F00058F06 /* Views */,
+			);
+			path = iPadOSPopoverSafeAreaDemo;
+			sourceTree = "<group>";
+		};
+		648EEBD82391830100058F06 /* iPadOSPopoverSafeAreaDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				648EEBD92391830100058F06 /* iPadOSPopoverSafeAreaDemoTests.m */,
+				648EEBDB2391830100058F06 /* Info.plist */,
+			);
+			path = iPadOSPopoverSafeAreaDemoTests;
+			sourceTree = "<group>";
+		};
+		648EEBE42391853F00058F06 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				648EEBF023918A2400058F06 /* Modal */,
+				648EEBE52391854800058F06 /* Main */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		648EEBE52391854800058F06 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				648EEBE62391855D00058F06 /* MainViewController.h */,
+				648EEBE72391855D00058F06 /* MainViewController.m */,
+				648EEBE92391856700058F06 /* MainViewController.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		648EEBEB2391865300058F06 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				648EEBEC2391865D00058F06 /* UIKit */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		648EEBEC2391865D00058F06 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				648EEBED2391871700058F06 /* UIViewController+StoryBoardInstantiatable.h */,
+				648EEBEE2391871700058F06 /* UIViewController+StoryBoardInstantiatable.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		648EEBF023918A2400058F06 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				648EEBF123918A4800058F06 /* PopoverViewController.h */,
+				648EEBF223918A4800058F06 /* PopoverViewController.m */,
+				648EEBF423918C1700058F06 /* PopoverViewController.storyboard */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		648EEBF62392A2A500058F06 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				648EEBBD239182FF00058F06 /* AppDelegate.h */,
+				648EEBBE239182FF00058F06 /* AppDelegate.m */,
+				648EEBCB2391830100058F06 /* LaunchScreen.storyboard */,
+				648EEBCE2391830100058F06 /* Info.plist */,
+				648EEBCF2391830100058F06 /* main.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		648EEBF72392A30F00058F06 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				648EEBC92391830100058F06 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		648EEBB9239182FF00058F06 /* iPadOSPopoverSafeAreaDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 648EEBDE2391830100058F06 /* Build configuration list for PBXNativeTarget "iPadOSPopoverSafeAreaDemo" */;
+			buildPhases = (
+				648EEBB6239182FF00058F06 /* Sources */,
+				648EEBB7239182FF00058F06 /* Frameworks */,
+				648EEBB8239182FF00058F06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iPadOSPopoverSafeAreaDemo;
+			productName = iPadOSPopoverSafeAreaDemo;
+			productReference = 648EEBBA239182FF00058F06 /* iPadOSPopoverSafeAreaDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		648EEBD42391830100058F06 /* iPadOSPopoverSafeAreaDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 648EEBE12391830100058F06 /* Build configuration list for PBXNativeTarget "iPadOSPopoverSafeAreaDemoTests" */;
+			buildPhases = (
+				648EEBD12391830100058F06 /* Sources */,
+				648EEBD22391830100058F06 /* Frameworks */,
+				648EEBD32391830100058F06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				648EEBD72391830100058F06 /* PBXTargetDependency */,
+			);
+			name = iPadOSPopoverSafeAreaDemoTests;
+			productName = iPadOSPopoverSafeAreaDemoTests;
+			productReference = 648EEBD52391830100058F06 /* iPadOSPopoverSafeAreaDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		648EEBB2239182FF00058F06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Yuki Okudera";
+				TargetAttributes = {
+					648EEBB9239182FF00058F06 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					648EEBD42391830100058F06 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 648EEBB9239182FF00058F06;
+					};
+				};
+			};
+			buildConfigurationList = 648EEBB5239182FF00058F06 /* Build configuration list for PBXProject "iPadOSPopoverSafeAreaDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 648EEBB1239182FF00058F06;
+			productRefGroup = 648EEBBB239182FF00058F06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				648EEBB9239182FF00058F06 /* iPadOSPopoverSafeAreaDemo */,
+				648EEBD42391830100058F06 /* iPadOSPopoverSafeAreaDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		648EEBB8239182FF00058F06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				648EEBEA2391856700058F06 /* MainViewController.storyboard in Resources */,
+				648EEBCD2391830100058F06 /* LaunchScreen.storyboard in Resources */,
+				648EEBCA2391830100058F06 /* Assets.xcassets in Resources */,
+				648EEBF523918C1700058F06 /* PopoverViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		648EEBD32391830100058F06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		648EEBB6239182FF00058F06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				648EEBF323918A4800058F06 /* PopoverViewController.m in Sources */,
+				648EEBBF239182FF00058F06 /* AppDelegate.m in Sources */,
+				648EEBD02391830100058F06 /* main.m in Sources */,
+				648EEBEF2391871700058F06 /* UIViewController+StoryBoardInstantiatable.m in Sources */,
+				648EEBE82391855D00058F06 /* MainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		648EEBD12391830100058F06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				648EEBDA2391830100058F06 /* iPadOSPopoverSafeAreaDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		648EEBD72391830100058F06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 648EEBB9239182FF00058F06 /* iPadOSPopoverSafeAreaDemo */;
+			targetProxy = 648EEBD62391830100058F06 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		648EEBCB2391830100058F06 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				648EEBCC2391830100058F06 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		648EEBDC2391830100058F06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		648EEBDD2391830100058F06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		648EEBDF2391830100058F06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3R82BR749S;
+				INFOPLIST_FILE = iPadOSPopoverSafeAreaDemo/Application/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.yuoku.iPadOSPopoverSafeAreaDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		648EEBE02391830100058F06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3R82BR749S;
+				INFOPLIST_FILE = iPadOSPopoverSafeAreaDemo/Application/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.yuoku.iPadOSPopoverSafeAreaDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		648EEBE22391830100058F06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8PR34D6DP;
+				INFOPLIST_FILE = iPadOSPopoverSafeAreaDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.yuoku.iPadOSPopoverSafeAreaDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iPadOSPopoverSafeAreaDemo.app/iPadOSPopoverSafeAreaDemo";
+			};
+			name = Debug;
+		};
+		648EEBE32391830100058F06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B8PR34D6DP;
+				INFOPLIST_FILE = iPadOSPopoverSafeAreaDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.yuoku.iPadOSPopoverSafeAreaDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iPadOSPopoverSafeAreaDemo.app/iPadOSPopoverSafeAreaDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		648EEBB5239182FF00058F06 /* Build configuration list for PBXProject "iPadOSPopoverSafeAreaDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				648EEBDC2391830100058F06 /* Debug */,
+				648EEBDD2391830100058F06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		648EEBDE2391830100058F06 /* Build configuration list for PBXNativeTarget "iPadOSPopoverSafeAreaDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				648EEBDF2391830100058F06 /* Debug */,
+				648EEBE02391830100058F06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		648EEBE12391830100058F06 /* Build configuration list for PBXNativeTarget "iPadOSPopoverSafeAreaDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				648EEBE22391830100058F06 /* Debug */,
+				648EEBE32391830100058F06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 648EEBB2239182FF00058F06 /* Project object */;
+}

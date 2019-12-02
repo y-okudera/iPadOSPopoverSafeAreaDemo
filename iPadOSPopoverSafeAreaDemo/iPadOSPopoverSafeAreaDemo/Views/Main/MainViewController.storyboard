@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TTT-v7-cig">
+    <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="UFa-ng-F4Y">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="Jho-aQ-xmb" customClass="MainViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hFG-S4-6PD">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6h0-T9-lcG">
+                                <rect key="frame" x="452" y="148" width="120" height="30"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="6km-3J-jqV"/>
+                                    <constraint firstAttribute="height" constant="30" id="73p-0Y-uzb"/>
+                                </constraints>
+                                <state key="normal" title="Show popover">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedShowPopoverButton:" destination="Jho-aQ-xmb" eventType="touchUpInside" id="Mt5-wf-BAo"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Tf4-lr-VCD">
+                                <rect key="frame" x="342" y="82" width="340.5" height="34"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="セルの件数（default=5）：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VgH-Be-Y9w">
+                                        <rect key="frame" x="0.0" y="0.0" width="212.5" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TQd-SV-XC8">
+                                        <rect key="frame" x="220.5" y="0.0" width="120" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="N7r-wk-bxb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Tf4-lr-VCD" firstAttribute="centerX" secondItem="hFG-S4-6PD" secondAttribute="centerX" id="M3d-7j-3Go"/>
+                            <constraint firstItem="6h0-T9-lcG" firstAttribute="top" secondItem="Tf4-lr-VCD" secondAttribute="bottom" constant="32" id="NYD-5a-T2n"/>
+                            <constraint firstItem="Tf4-lr-VCD" firstAttribute="top" secondItem="ZXB-gw-YYJ" secondAttribute="top" constant="32" id="P22-BF-dyf"/>
+                            <constraint firstItem="6h0-T9-lcG" firstAttribute="centerX" secondItem="hFG-S4-6PD" secondAttribute="centerX" id="tcO-hp-csa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZXB-gw-YYJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OW9-Nt-LOw"/>
+                    <connections>
+                        <outlet property="countTextField" destination="TQd-SV-XC8" id="3cX-nC-Jbu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3mx-8c-1gd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="856.640625" y="59.375"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aC1-pS-qJs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TTT-v7-cig" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IA9-uY-EFa">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Jho-aQ-xmb" kind="relationship" relationship="rootViewController" id="XPM-iT-xgb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z60-Ke-Mby" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132.421875" y="59.375"/>
+        </scene>
+    </scenes>
+</document>
